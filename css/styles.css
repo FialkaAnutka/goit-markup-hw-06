@@ -648,7 +648,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 .modal-form-comments {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 }
 .modal-label-comments{
     font-weight: 400;
@@ -664,6 +663,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;
+    margin-bottom: 20px;
+    resize: none;
 }
 .user-text::placeholder{
     font-weight: 400;
@@ -673,7 +674,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     color: rgba(117, 117, 117, 0.5);
 }
 .label-policy{
-    display: inline-block;
+    display: flex;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -681,6 +682,20 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     color: #757575;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
+}
+.label-policy span{
+width: 16px;
+height: 15px;
+border: 2px solid black;
+border-radius: 3px;
+margin-right: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.check-icon{
+    fill: transparent;
 }
 .input-policy{
     content: "";
@@ -694,7 +709,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     height: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
