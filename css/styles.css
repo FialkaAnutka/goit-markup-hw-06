@@ -607,13 +607,17 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 .icon-cross{
     fill: #000000;
 }
+.icon-cross:hover,
+.icon-cross:focus {
+    fill: var(--accent-color);
+}
 .modal-title{
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--headline-color)
     margin-bottom: 12px;
 }
 .modal-form-field{
@@ -636,6 +640,10 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     border-radius: 4px;
     padding-left: 30px;
 }
+.modal-input:hover,
+.modal-input:focus{
+    border-color: var(--accent-color);
+}
 .modal-input-wrap{
     position: relative;
 }
@@ -644,6 +652,10 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
+}
+.modal-input:hover +.input-icon,
+.modal-input:focus+.input-icon{
+    fill: var(--accent-color);
 }
 .modal-form-comments {
     display: flex;
@@ -673,6 +685,10 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
+.user-text:hover,
+.user-text:focus{
+    border-color: var(--accent-color);
+}
 .label-policy{
     display: flex;
     font-weight: 400;
@@ -694,14 +710,26 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.check-icon{
-    fill: transparent;
-}
 .input-policy{
     content: "";
     width: 16px;
     height: 15px;
     background: #212121;
+}
+.check-icon{
+    fill: transparent;
+}
+.input-policy:checked + .label-policy span{
+    background-color: var(--accent-color);
+    border: none;
+}
+.input-policy:checked+.label-policy .check-icon{
+    fill: #EEEEEE;
+}
+.check-dogovor{
+    color: var(--accent-color);
+    margin-left: 5px;
+    
 }
 .modal-bth-active{
     display: block;
@@ -719,5 +747,10 @@ justify-content: center;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer;
+}
+.modal-bth-active:hover,
+.modal-bth-active:focus{
+    background: #188CE8;
 }
 
